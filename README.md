@@ -1,1 +1,1 @@
-# the-jungle-ghost.github.io
+the-jungle-ghost.github.io
