@@ -1,0 +1,156 @@
+body {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  .gif-column {
+    flex: 1; /* Take 50% of container width */
+  }
+  
+  .content-column {
+    flex: 1; /* Take 50% of container width */
+    display: flex; /* Nested flexbox for vertical alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center align vertically */
+    align-items: center; /* Center align horizontally */
+  }
+  
+  .gif-container {
+    width: 100%;
+  }
+  
+  .gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4caf50;
+    text-shadow: 0 0 10px #4caf50;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #4caf50;
+    text-shadow: 0 0 10px #4caf50;
+  }
+  
+  p {
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 20px;
+    color: #4caf50;
+  }
+
+  
+  .buttons {
+    text-align: center; /* Center align items */
+    margin-top: 20px; /* Added margin for spacing */
+  }
+  
+  .button {
+    display: inline-block; /* Display as inline block */
+    margin: 10px; /* Adjust margin between buttons */
+    padding: 15px 30px;
+    background-color: #0d1b2a; /* Dark background */
+    color: #66ff66; /* Green text */
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #66ff66; /* Green background on hover */
+    color: #0d1b2a; /* Dark text on hover */
+    text-shadow: 0 0 5px #99ff99;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-info ul li {
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: #66ff66; /* Green color for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .contact-info a:hover {
+    color: #99ff99; /* Lighter green on hover */
+    text-shadow: 0 0 5px #99ff99;
+  }
+  
+  .video-container {
+    border: 2.5px solid #99ff99; /* Add a solid border with light gray color */
+    border-radius: 15px;
+    padding: 10px; /* Add padding inside the border */
+    margin-top: 20px; /* Add some margin to separate from other content */
+  }
+  
+  .video-container video {
+    width: 100%; /* Ensure the video fills its container */
+    display: block; /* Ensure the video is displayed as a block element */
+  }
+
+  .rtl-text {
+    direction: rtl;
+    text-align: right;
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust the font-weight as needed */
+    font-style: normal;
+    margin-bottom: 1em; /* Add spacing between paragraphs */
+  }
+  
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .gif-column,
+    .content-column {
+      width: 100%; /* Full width for each column on small screens */
+    }
+  
+    .button {
+      padding: 12px 24px;
+      font-size: 1.2em;
+    }
+  }
+  
